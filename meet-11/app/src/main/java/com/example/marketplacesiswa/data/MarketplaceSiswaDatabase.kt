@@ -17,9 +17,7 @@ import kotlinx.coroutines.launch
     exportSchema = false
 )
 abstract class MarketplaceDatabase : RoomDatabase() {
-
     abstract fun productDao(): ProductDao
-
     companion object {
         @Volatile
         private var INSTANCE: MarketplaceDatabase? = null
